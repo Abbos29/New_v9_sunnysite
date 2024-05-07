@@ -5,7 +5,8 @@
     <title>SunnySite - Your Gateway to Sun-Drenched Adventures</title>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
-    <meta name="description" content="Explore the world of sun-soaked travel with SunnySite. Celebrate the beauty of nature, enjoy endless adventures, and create memories to last a lifetime." />
+    <meta name="description"
+        content="Explore the world of sun-soaked travel with SunnySite. Celebrate the beauty of nature, enjoy endless adventures, and create memories to last a lifetime." />
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css" />
     <link rel="shortcut icon" href="favicon.png" />
@@ -27,11 +28,18 @@
                         </a>
                     </div>
                     <ul class="menu">
-                        <li class="menu__item"><a href="index.html#discover" class="menu__item-link" data-scroll>Discover</a></li>
-                        <li class="menu__item"><a href="index.html#tours" class="menu__item-link" data-scroll>Tours</a></li>
-                        <li class="menu__item"><a href="index.html#about" class="menu__item-link" data-scroll>About</a></li>
-                        <li class="menu__item"><a href="index.html#partners" class="menu__item-link" data-scroll>Partners</a></li>
-                        <li class="menu__item"><a href="index.html#tariff" class="menu__item-link" data-scroll>Tariff</a></li>
+                        <li class="menu__item"><a href="index.html#discover" class="menu__item-link"
+                                data-scroll>Discover</a></li>
+                        <li class="menu__item"><a href="index.html#tours" class="menu__item-link" data-scroll>Tours</a>
+                        </li>
+                        <li class="menu__item"><a href="index.html#about" class="menu__item-link" data-scroll>About</a>
+                        </li>
+                        <li class="menu__item"><a href="index.html#partners" class="menu__item-link"
+                                data-scroll>Partners</a></li>
+                        <li class="menu__item"><a href="index.html#tariff" class="menu__item-link"
+                                data-scroll>Tariff</a></li>
+                                <li class="menu__item"><a href="index.html#contact" class="menu__item-link"
+                                    data-scroll>Contact</a></li>
                         <!-- <li class="menu__item"><a href="privacy-policy.html" class="menu__item-link" data-scroll>Privacy Policy</a></li>
                         <li class="menu__item"><a href="terms-conditions.html" class="menu__item-link" data-scroll>Terms Conditions</a></li> -->
                     </ul>
@@ -43,7 +51,6 @@
         </nav>
     </header>
 
-
     <main>
         <section class="hero" id="discover">
             <div class="container">
@@ -54,14 +61,14 @@
                             packages.</p>
                         <button class="btn">Explore Now</button>
                     </div>
-    
+
                     <div class="hero__img">
                         <img src="img/hero-1.png" alt="img">
                     </div>
                 </div>
             </div>
         </section>
-    
+
         <section class="tours" id="tours">
             <div class="container">
                 <h2 class="section-title">Tours</h2>
@@ -71,19 +78,19 @@
                         <h3>Coastal Escapade <br> Tour</h3>
                         <h5>421✅</h5>
                     </div>
-    
+
                     <div class="tours__card">
                         <img src="img/tour-2.jpg" alt="img">
                         <h3>Mountain Majesty Expedition</h3>
                         <h5>731✅</h5>
                     </div>
-    
+
                     <div class="tours__card">
                         <img src="img/tour-3.jpg" alt="img">
                         <h3>Cultural Odyssey Experience</h3>
                         <h5>119✅</h5>
                     </div>
-    
+
                     <div class="tours__card">
                         <img src="img/tour-4.jpg" alt="img">
                         <h3>Wilderness Adventure Retreat</h3>
@@ -92,7 +99,7 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="about" id="about">
             <div class="container">
                 <h2 class="section-title">About</h2>
@@ -100,18 +107,21 @@
                     <div class="about__item">
                         <img src="img/about-1.jpg" alt="img">
                         <h3>Our Mission</h3>
-                        <p>At our company, our mission is to provide unforgettable travel experiences that enrich people's lives and create lifelong memories.</p>
+                        <p>At our company, our mission is to provide unforgettable travel experiences that enrich
+                            people's lives and create lifelong memories.</p>
                     </div>
                     <div class="about__item">
                         <img src="img/about-2.png" alt="img">
                         <h3>Our Team</h3>
-                        <p>Our team is comprised of passionate travel experts who are committed to making your journey remarkable.
+                        <p>Our team is comprised of passionate travel experts who are committed to making your journey
+                            remarkable.
                         </p>
                     </div>
                     <div class="about__item">
                         <img src="img/about-3.png" alt="img">
                         <h3>Our Vision</h3>
-                        <p>Our vision is to inspire and empower individuals to explore the world with curiosity and respect. We believe that travel, foster understanding.</p>
+                        <p>Our vision is to inspire and empower individuals to explore the world with curiosity and
+                            respect. We believe that travel, foster understanding.</p>
                     </div>
                 </div>
             </div>
@@ -156,8 +166,30 @@
                 </div>
             </div>
         </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__wrapper">
+                    <!-- FORM -->
+                    <form id="form" autocomplete="off" action="send-form.php" method="post" class="form">
+                        <h2 class="section-title">Contact us</h2>
+                        <input type="text" id="username" name="username" placeholder="Name" required />
+                        <input type="email" id="email" name="email" placeholder="Email" required />
+                        <textarea id="comment" cols="30" rows="3" name="comment" placeholder="Message..."
+                            required></textarea>
+                        <div class="checkbox">
+                            <input id="c_1" name="privacy" value="on" class="checkbox__input" type="checkbox"
+                                required />
+                            <label for="c_1" class="checkbox__label"><a style="text-decoration: underline"
+                                    href="privacy-policy.html" class="checkbox__text">I accept the Privacy
+                                    Policy</a></label>
+                        </div>
+                        <button type="submit" class="form__button">Send a message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    
 
     <footer class="footer">
         <div class="container">
@@ -174,30 +206,19 @@
                 </div>
 
                 <div class="footer__col col">
-                   <a href="index.html#discover">Discover</a>
-                   <a href="index.html#tours">Tours</a>
-                   <a href="index.html#about">About</a>
-                   <a href="index.html#partners">Partners</a>
-                   <a href="index.html#tariff">Tariff</a>
+                    <a href="index.html#discover">Discover</a>
+                    <a href="index.html#tours">Tours</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#partners">Partners</a>
+                    <a href="index.html#tariff">Tariff</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    
 
-    <!-- FORM -->
-    <!-- <form id="form" autocomplete="off" action="send-form.php" method="post" class="form">
-        <input type="text" id="username" name="username" placeholder="Digite seu nome" required />
-        <input type="email" id="email" name="email" placeholder="Endereço de email" required />
-        <textarea id="comment" cols="30" rows="3" name="comment" placeholder="Placeholder..." required></textarea>
-        <div class="checkbox">
-            <input id="c_1" name="privacy" value="on" class="checkbox__input" type="checkbox" required /> <label
-                for="c_1" class="checkbox__label"><a style="text-decoration: underline" href="privacy-policy.html"
-                    class="checkbox__text">Aceito a Política de Privacidade</a></label>
-        </div>
-        <button type="submit" class="form__button">Envie uma mensagem</button>
-    </form> -->
+
+
 
 
     <script src="js/main.js"></script>
